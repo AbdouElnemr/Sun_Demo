@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="228dp"
+        android:background="@color/colorsunshin"
+        android:layout_marginTop="60dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+             android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:text="Today June - 26"
+            android:clickable="true"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:id="@+id/list_item_forecast_textview_today"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="21"
+            android:textColor="#FFF"
+            android:id="@+id/textView2"
+            android:layout_below="@+id/list_item_forecast_textview_today"
+            android:layout_alignLeft="@+id/list_item_forecast_textview_today"
+            android:layout_alignStart="@+id/list_item_forecast_textview_today"
+            android:layout_marginTop="40dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textView3"
+            android:text="15"
+            android:textColor="#FFF"
+            android:layout_below="@+id/textView2"
+            android:layout_alignEnd="@+id/textView2"
+            android:layout_marginTop="56dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView2"
+            android:src="@drawable/clouds"
+            android:layout_marginRight="24dp"
+            android:layout_marginEnd="29dp"
+            android:layout_below="@+id/list_item_forecast_textview_today"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Cloudy "
+            android:textColor="#FFF"
+            android:id="@+id/textView4"
+            android:layout_below="@+id/imageView2"
+            android:layout_alignEnd="@+id/imageView2"
+            android:layout_marginEnd="32dp" />
+
+    </RelativeLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listview_forecast"
+        android:layout_below="@id/list_item_forecast_textview_today"/>
+
+
+</LinearLayout>
